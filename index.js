@@ -19,7 +19,7 @@ const urls = [
   "https://www.bell.ca/Mobility/SIM-cards"
 ];
 
-app.get('/products', async (req, res) => {
+app.get('/list', async (req, res) => {
   const allProducts = [];
 
   for (const url of urls) {
