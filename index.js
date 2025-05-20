@@ -14,9 +14,7 @@ app.get('/', (req, res) => {
 const urls = [
   "https://www.bell.ca/Mobility/Smartphones_and_mobile_internet_devices",
   "https://www.bell.ca/Mobility/Smartwatches",
-  "https://www.bell.ca/Mobility/Tablets",
-  "https://www.bell.ca/Mobility/Mobile-Internet-Devices-listing",
-  "https://www.bell.ca/Mobility/SIM-cards"
+  "https://www.bell.ca/Mobility/Tablets"
 ];
 
 app.get('/list', async (req, res) => {
