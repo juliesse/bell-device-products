@@ -36,7 +36,7 @@ app.get('/list', async (req, res) => {
         const link = $(el).find("a.card-link-js").attr("href");
         const img = $(el).find("img.img-responsive").attr("data-src") ||
                     $(el).find("img.img-responsive").attr("src");
-        const desc = $(el).find("p.small-text.mb-0").text().trim();
+        const desc = $(el).find("p.small-text.mb-0").text().trim().replace(/\s+/g, ' ');
 
         allProducts.push({
           category: url,
